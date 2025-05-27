@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name=’theme-color” content=“#272727”>
+    <meta name="description" content="MER.XYZ Database" />
+    <meta name="robots" content="index, nofollow" />
+
+    <title>MER.XYZ Database</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="header-menu flex flex-evenly sticky-top" id="menu">
+        <div class="pill"></div>
+        <span onclick="movePillAndShow(this, 'about')" class="glass">About</span>
+        <span onclick="movePillAndShow(this, 'mer')" class="glass">MER.XYZ</span>
+        <span onclick="movePillAndShow(this, 'catalogue')" class="glass">Catalogue</span>
+    </div>
+    <div id="content">
+        <section id="about" class="content-section">
+            <div class="main-content font-small">
+                <p id="about-description">Mindseyerecords.xyz is a Brighton based label, focusing on experimental and
+                    club sounds. The label was established in 2021, preferring to release limited physical formats.</p>
+                <div class="about-content grid-2 font-small">
+                    <div class="artists">
+                        <br>
+                        <span class="title">Artists</span>
+                        <br>
+                        <span>DJ OSEPH</span>
+                        <br>
+                        <span>Numerologist</span>
+                        <br>
+                        <span>Ivory Black</span>
+                        <br>
+                        <span>Rocheman</span>
+                        <br>
+                        <span>Kanal Nula</span>
+                        <br>
+                        <span>XTEREA</span>
+                        <br>
+                        <span>Nape</span>
+                        <br>
+                        <span>D. Towärds</span>
+                        <br>
+                        <span>Spiderwrap</span>
+                        <br>
+                        <span>DJ SPELL</span>
+                        <br>
+                        <span>æinter</span>
+                        <br>
+                        <span>Manton</span>
+                    </div>
+                    <div class="press-links-contact">
+                        <br>
+                        <span class="title">Press</span>
+                        <br>
+                        <span>NTS Radio</span>
+                        <br>
+                        <span>Odyxxey Radio</span>
+                        <br>
+                        <span>Examine Archive</span>
+                        <br>
+                        <span>Bandcamp Daily</span>
+                        <br>
+                        <span>The Wire</span>
+                        <br>
+                        <span>Record Turnover</span>
+                        <br>
+                        <br>
+                        <span class="title">Contact</span>
+                        <br>
+                        <a href="mailto:connect@mindseyerecords.xyz">connect@mindseyerecords.xyz</a>
+                        <br>
+                        <a href="https://www.instagram.com/mindseyerecords.xyz/">@mindseyerecords.xyz</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section id="mer" class="content-section active">
+        <div class="main-content">
+            <div class="image-container" onclick="toggleCredits()">
+                <img class="home-image" src="merxyz2025.jpg" alt="mer.xyz2025">
+                <div class="glass-overlay hidden">
+                    <div class="credits-legal grid-2">
+                        <div class="credits">
+                            <p class="title">Credits</p>
+                            <span class="title">Label design & direction</span><br><span>R. Mck</span>
+                            <br><br>
+                            <span class="title">Website design & code</span><br><span>Cold Scripture</span>
+                        </div>
+                        <div class="legal">
+                            <p class="title">Legal</p>
+                            <span>All designs and audio recordings belong to Mindseyerecords.xyz, copyright 2025.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="catalogue" class="content-section">
+        <div class="main-content">
+            <div class="selector-wrapper">
+                <span class="selector-style">Select:</span>
+                <select id="slideSelector" class="selector-style">
+                    <option value="0">MERXYZ16</option>
+                    <option value="1">MERXYZ15</option>
+                    <option value="2">MERXYZ14</option>
+                    <option value="3">MERXYZ13P</option>
+                    <option value="4">MERXYZ12</option>
+                    <option value="5">MERXYZ11</option>
+                    <option value="6">MERXYZ10</option>
+                    <option value="7">MERXYZ9</option>
+                    <option value="8">MERXYZ8P</option>
+                    <option value="9">MERXYZ7</option>
+                    <option value="10">MERXYZ6</option>
+                    <option value="11">MERXYZVF</option>
+                    <option value="12">MERXYZ5</option>
+                    <option value="13">MERXYZ4</option>
+                    <option value="14">MERXYZ3</option>
+                    <option value="15">MERXYZ2</option>
+                </select>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="releases swiper-slide">
+                        <div class="swiper-pagination"></div>
+                        <img class="home-image" src="merxyz16.jpg" alt="mer.xyz16">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>Digital</p>
+                            <p>#Techno</p>
+                            <p>#Trance</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/empty-heart" target="_blank"
+                                class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Manton - Empty Heart</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Without</span>
+                                <br>
+                                <span>How Dull</span>
+                                <br>
+                                <span>Time Is On My Side</span>
+                                <br>
+                                <span>Words Misunderstood</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz15.jpg" alt="mer.xyz15">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>12" Vinyl</p>
+                            <p>#Techno</p>
+                            <p>#Experimental</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/untitled-iii" target="_blank"
+                                class="annotation bandcamp">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>æinter - Untitled III</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>i</span>
+                                <br>
+                                <span>ii</span>
+                                <br>
+                                <span>iii</span>
+                                <br>
+                                <span>iv</span>
+                                <br>
+                                <span>v</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz14.jpg" alt="mer.xyz14">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>12" Vinyl</p>
+                            <p>#Techno</p>
+                            <p>#Hardtek</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/proof-of-life" target="_blank"
+                                class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>DJ SPELL - Proof Of Life</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Lucid Death</span>
+                                <br>
+                                <span>Heresy</span>
+                                <br>
+                                <span>Ejector</span>
+                                <br>
+                                <span>Means To An End</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz13p.jpg" alt="mer.xyz13p">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>CD, Digital</p>
+                            <p>#Techno</p>
+                            <p>#Trance</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/promotional-use-only"
+                                target="_blank" class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Spiderwrap - Promotional Use Only</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>45.5</span>
+                                <br>
+                                <span>Close Encounter</span>
+                                <br>
+                                <span>Number1</span>
+                                <br>
+                                <span>Serum(2021)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz12.jpg" alt="mer.xyz12">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>7" Vinyl, Digital</p>
+                            <p>#Ambient</p>
+                            <p>#Experimental</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/untitled-cuts" target="_blank"
+                                class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>D. Towärds - Untitled Cuts</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>hf dub</span>
+                                <br>
+                                <span>wr gtec</span>
+                                <br>
+                                <span>a+r atmo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz11.jpg" alt="mer.xyz11">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>CD</p>
+                            <p>#Techno</p>
+                            <p>#Live</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/live-at-le-chinois"
+                                target="_blank" class=" bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Nape - Live At Chinois</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Severin Black</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Live At Chinois, Paris</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz10.jpg" alt="mer.xyz10">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>CD, Digital</p>
+                            <p>#Techno</p>
+                            <p>#Hardtek</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/hectic" target="_blank"
+                                class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Numerologist - Hectic</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>SSWN2</span>
+                                <br>
+                                <span>Var1</span>
+                                <br>
+                                <span>61XM</span>
+                                <br>
+                                <span>Ho1e</span>
+                                <br>
+                                <span>LED24</span>
+                                <br>
+                                <span>CHO+T6</span>
+                                <br>
+                                <span>Sinie00</span>
+                                <br>
+                                <span>6lack dust</span>
+                                <br>
+                                <span>ECL3CT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz9.jpg" alt="mer.xyz9">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>12" Vinyl, Digital</p>
+                            <p>#Techno</p>
+                            <p>#Beats</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/like-the-shadows-before-babylon"
+                                target="_blank" class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>XTEREA - "Like The Shadows Before Babylon"</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Bitter Roots I</span>
+                                <br>
+                                <span>Bitter Roots II</span>
+                                <br>
+                                <span>Gros</span>
+                                <br>
+                                <span>Foolish</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz8p.jpg" alt="mer.xyz8P">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>CD</p>
+                            <p>#Techno</p>
+                            <p>#Hardtek</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/promotional-use-only-2"
+                                target="_blank" class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Numerologist - Promotional Use Only</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Mix</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz7.jpg" alt="mer.xyz7">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>CD</p>
+                            <p>#Ambient</p>
+                            <p>#Industrial</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/the-last-time-i-forget"
+                                target="_blank" class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Kanal Nula - The Last Time I Forget</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Dima Ibrahim</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>UN</span>
+                                <br>
+                                <span>The Bell In My Ear</span>
+                                <br>
+                                <span>The Last Time I Forget</span>
+                                <br>
+                                <span>Subordinate</span>
+                                <br>
+                                <span>Father</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz6.jpg" alt="mer.xyz6">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>Digital</p>
+                            <p>#Alternative</p>
+                            <p>#DIY</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/virtua-saint" target="_blank"
+                                class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Rocheman - Virtua Saint</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Kinn</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Koistinen ft. Spencer</span>
+                                <br>
+                                <span>Wasteworld</span>
+                                <br>
+                                <span>Persimmon Drive ft. Toulip Wonder</span>
+                                <br>
+                                <span>Nightingale 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyzvf.jpg" alt="mer.xyzvf">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>Digital</p>
+                            <p>#Techno</p>
+                            <p>#Hardtek</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/verfallen" target="_blank"
+                                class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Various Artists - Verfallen</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Lou Pennington & Ivory Black</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>SOS</span>
+                                <br>
+                                <span>Intravenous</span>
+                                <br>
+                                <span>Side Effects</span>
+                                <br>
+                                <span>Nausea</span>
+                                <br>
+                                <span>Untitled 101</span>
+                                <br>
+                                <span>Tormented Vessel </span>
+                                <br>
+                                <span>Nagelbett</span>
+                                <br>
+                                <span>Gael</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz5.jpg" alt="mer.xyz5">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>Digital</p>
+                            <p>#Techno</p>
+                            <p>#Hardtek</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/e-ras-r-none-of-a-kind"
+                                target="_blank" class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>DJ OSEPH - E.rAs-r/None Of A Kind</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Lou Pennington</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>E.rAs-r</span>
+                                <br>
+                                <span>None Of A Kind</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz4.jpg" alt="mer.xyz4">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>CD, Digital</p>
+                            <p>#Ambient</p>
+                            <p>#Noise</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/black-bile" target="_blank"
+                                class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Ivory Black - Black Bile</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Ivory Black</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Frost Bite</span>
+                                <br>
+                                <span>Witching Hour</span>
+                                <br>
+                                <span>Melancholia</span>
+                                <br>
+                                <span>Blood Oath</span>
+                                <br>
+                                <span>Red Snow</span>
+                                <br>
+                                <span>The Dead Of Winter</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz3.jpg" alt="mer.xyz3">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>Digital</p>
+                            <p>#Techno</p>
+                            <p>#Ambient</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/radio-the-hive" target="_blank"
+                                class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>Numerologist - Radio/The Hive</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Lou Pennington</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Radio</span>
+                                <br>
+                                <span>The Hive</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases swiper-slide">
+                        <img class="home-image" src="merxyz2.jpg" alt="mer.xyz2">
+                        <div class="release-genres annotation flex sm-gap">
+                            <p>Digital</p>
+                            <p>#Techno</p>
+                            <p>#Hardtek</p>
+                            <a href="https://mindseyerecordsdotxyz.bandcamp.com/album/ascension-instantregret"
+                                target="_blank" class="bandcamp annotation">Bandcamp</a>
+                        </div>
+                        <div class="release-grid-firstrow grid-4">
+                            <div class="release-title font-small">
+                                <span class="title">Artist - Title</span>
+                                <br>
+                                <span>DJ OSEPH - Ascension/Instant Regret</span>
+                                <br>
+                                <br>
+                                <span class="title">Mastering</span>
+                                <br>
+                                <span>Lou Pennington</span>
+                            </div>
+                            <div class="tracklisting font-small">
+                                <span class="title">Tracklisting</span>
+                                <br>
+                                <span>Ascension</span>
+                                <br>
+                                <span>Instant Regret</span>
+                            </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
